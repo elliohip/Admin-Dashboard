@@ -1,15 +1,31 @@
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: red;
+    grid-template-columns: 1fr 7fr 1fr;
+    background-color:skyblue
 }
 
+.header-2 {
+    
+    align-self: end;
+    
+    
+
+}
+
+svg {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#eBFANvofxGQ1 {
+    max-width: 500px;
+}
 
 
 main {
     display: grid;
     grid-template-columns: 1fr 8fr;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: auto 8fr;
     grid-column-start:1;
     grid-column-end:3;
     grid-row-start: 2;
@@ -17,19 +33,45 @@ main {
 
     background-color: green;
 
+    gap: 5px;
+}
+
+#action-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#action-buttons a {
+
+    border-width: 1pt;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10%;
+    font-size: 1.5rem
 
 }
+
+
 
 .top-menu {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-row-start: 1;
-    grid-row-end:2;
+    grid-row-end: 2;
     grid-column-start: 2;
+    gap: 5px;
 
+    background-color:blue;
 }
 
 #main {
+    gap: 5px;
+
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -56,17 +98,24 @@ nav {
     grid-column-end: 2;
     grid-template-rows: repeat(1fr, 9);
     background-color: blue;
+    gap: 5px;
 }
 
 footer {
     grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-end: -1;
+    height: 50px;
+    background-color:skyblue;
+    grid-column-start: 1;
+    grid-column-end: -1;
 }
 
 #grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 8fr auto;
+
+    gap: 5px;
 }
 
 header {
